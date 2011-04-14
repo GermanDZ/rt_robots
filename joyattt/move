@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require "./joyattt"
+robot = Joya_TTT.new
+robot.board = Board.new(ARGV[0])
+puts robot.next_move.output_code
